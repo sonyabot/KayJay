@@ -1,0 +1,9 @@
+body {
+ 	background-color: #8deaf2;
+ 	.loading {
+ 		font-size: 50px;
+ 	}
+ 	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+	text-align: center; 
+	color: #363636;
+}
