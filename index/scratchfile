@@ -1,0 +1,40 @@
+$a = "I know how to use the computer to find things";
+$b = "I know how to use the computer to help me with school";
+$c = "I know how to communicate with others on the computer";
+$d = "I like using the computer";
+$e = "I know how to protect my privacy on the internet";
+$f = "I use email regularly";
+
+$array = [$a, $b, $c, $d, $e, $f];
+
+	DEFINE('DB_USERNAME', 'root');
+	DEFINE('DB_PASSWORD', 'root');
+	DEFINE('DB_HOST', 'localhost');
+	DEFINE('DB_DATABASE', 'kayjay1');
+
+
+	$mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
+
+
+	if (mysqli_connect_error()) {
+		file_put_contents("sonya.log", "error", FILE_APPEND);
+		die('Connect Error ('.mysqli_connect_errno().') '.mysqli_connect_error());
+	} else {
+		file_put_contents("sonya.log", "no error", FILE_APPEND);
+	}
+
+foreach ($array as $arr) {
+	$sql = "INSERT INTO survey(answer) values('$arr');";
+	mysqli_query($mysqli, $sql);
+}
+
+file_put_contents("sonya.log", "done", FILE_APPEND);
+
+
+
+<?php foreach($array as $key=>$value): ?>
+<input type="checkbox" name="<?php echo $key; ?>" value="<?php echo $value; ?>"><br>
+<?php endforeach; ?>
+
+echo '<input type="checkbox" name="$key" value="$value">$value<br>';
+echo "$key $value <br>";

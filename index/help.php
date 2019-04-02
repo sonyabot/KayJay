@@ -10,7 +10,7 @@
 	<div>
 		<!-- add href to welcome page here -->
 		<h2 style="font-size: 50px;">How can we help?</h2>	
-		<form action="http://kayjay:8888/index/searcher.php">
+		<form action="http://kayjay:8888/index/searcher.php" method="post">
 		  <input type="text" name="query"><br>
 		  <input type="submit" value="Submit">
 		</form>

@@ -12,7 +12,7 @@
 		<h2>Welcome!</h2>	
 		<h4> Let's get started! </h4>
 		<p><a href="">login</a></p>
-		<p><a href="">start account</a></p>
+		<p><a href="start.php">start account</a></p>
 	</div>
 </body>
 </html>
