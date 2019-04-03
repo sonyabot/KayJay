@@ -13,12 +13,14 @@
 	}
 	$values = $_POST;
 	$string = implode(", ", $values);
+	$user_id = 3;
+	$date = date("Y-m-d H:i:s");
 
-	$sql = "INSERT INTO users_survey(answer_id) values('$string');";
+	$sql = "INSERT INTO users_survey(user_id, answer_id, date_submitted) values('$user_id', '$string', '$date');";
 
 	mysqli_query($mysqli, $sql);
 	
-	file_put_contents($file, $string, FILE_APPEND);
+	file_put_contents($file, $sql, FILE_APPEND);
     
 	$mysqli->close();
 	
