@@ -32,7 +32,7 @@ foreach ($rows as $val) {
 		<form action="http://kayjay:8888/index/post_survey.php" method="post">
 			<?php
 				foreach ($array as $key => $value) {
-					echo "<input type='checkbox' name='$key' value='$value'>$value<br>";
+					echo "<input type='checkbox' name='$key' value='$key'>$value<br>";
 				} 
 			?>
 		  <input type="submit" value="Submit">
