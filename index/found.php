@@ -14,6 +14,7 @@ $output = curl_exec($handle);
  
 curl_close($handle);
 echo $output;
+
 ?>
 <!-- <DOCTYPE html>
 <html>

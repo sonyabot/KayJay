@@ -4,24 +4,22 @@
 	DEFINE('DB_HOST', 'localhost');
 	DEFINE('DB_DATABASE', 'kayjay1');
 
-	$file = "sonya.log";
-
 	$mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
 
 	if (mysqli_connect_error()) {
 		die('Connect Error ('.mysqli_connect_errno().') '.mysqli_connect_error());
 	}
+	$user_id = $_POST["uid"];
+	unset($_POST["uid"]);
 	$values = $_POST;
+
 	$string = implode(", ", $values);
-	$user_id = 3;
 	$date = date("Y-m-d H:i:s");
 
 	$sql = "INSERT INTO users_survey(user_id, answer_id, date_submitted) values('$user_id', '$string', '$date');";
 
 	mysqli_query($mysqli, $sql);
-	
-	file_put_contents($file, $sql, FILE_APPEND);
-    
+	    
 	$mysqli->close();
 	
 	header("Location: http://kayjay:8888/index/help.php");

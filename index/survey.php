@@ -1,5 +1,7 @@
 <?php 
 
+$uid = $_GET["uid"];
+
 DEFINE('DB_USERNAME', 'root');
 DEFINE('DB_PASSWORD', 'root');
 DEFINE('DB_HOST', 'localhost');
@@ -8,7 +10,6 @@ DEFINE('DB_DATABASE', 'kayjay1');
 $mysqli = mysqli_connect(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
 
 $sql = "SELECT * from survey ORDER BY answer_id;";
-
 
 $rows = array();
 $survey_question = mysqli_query($mysqli, $sql);
@@ -27,16 +28,22 @@ foreach ($rows as $val) {
   <link rel="stylesheet" type="text/css" href="kj_theme.css">
 </head>
 <body>
-	<div>
-		<h2 style="font-size: 50px;">Please take our survey!</h2>	
+	<div style="text-align: center;">
+		<h2 style="font-size: 50px;">Please take our survey!</h2>
+		<div style="display: inline-block; text-align: left;">	
 		<form action="http://kayjay:8888/index/post_survey.php" method="post">
 			<?php
 				foreach ($array as $key => $value) {
-					echo "<input type='checkbox' name='$key' value='$key'>$value<br>";
+					echo "<label class='container'>";
+					echo "<input class='survey-vals' type='checkbox' name='$key' value='$key'>$value<br>";
+					echo "<span class='checkmark'></span>";
+					echo "</label>";
 				} 
 			?>
-		  <input type="submit" value="Submit">
+			<input type="hidden" name="uid" value="<?php echo $uid?>"/>
+		  	<input class="submit-button" type="submit" value="Submit">
 		</form>
+	</div>
 	</div>
 </body>
 </html>
