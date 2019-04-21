@@ -4,9 +4,10 @@
   <link rel="stylesheet" type="text/css" href="kj_theme.css">
 </head>
 <body>
-	<div style="text-align: center;"> <h1 style="line-height: 45px;">Email is a great way to send and receive electronic messages! <br> If you don't already have an email account, creating one is fast and easy!</h1></div>
-	<h2>We'll show you steps on how to get started!</h2>
-	<h2>Below is the flow you'll see when creating your account.</h2>
+	<a class="back_link" href="http://kayjay:8888/index/start.php"> << go back</a>
+	<div style="text-align: center;"> <h1 style="line-height: 45px;">About Email</h1></div>
+	<h2>Email is a great way to send and receive electronic messages. <br> If you don't already have an email account, creating one is fast and easy!</h2>
+	<h2>Below are some tips on how to create a gmail account:</h2>
 	<img class="gmail" src="email_info.jpg">
 	<h2>Adding a phone number is optional, but always a good idea,
 		<br>

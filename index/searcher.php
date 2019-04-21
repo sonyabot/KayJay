@@ -12,6 +12,8 @@ switch ($subject) {
 	default: 
 	$url .= "/science_help.php";
 }
+header("Location: " . $url);
+exit;
 ?>
 <html>
 	<body>
