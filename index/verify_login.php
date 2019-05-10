@@ -30,13 +30,14 @@
 	$info = mysqli_query($con, $sql);
 	$date = mysqli_fetch_row($info);
 	$three_months_ago = date("Y-m-d H:i:s", strtotime("-3 Months"));
+	setcookie("user_id", $user_id, time()+3600);
 	// If it's been three months since the last time they took the survey, send them there again.
 	if ($date <= $three_months_ago) {
-		header("Location: http://kayjay:8888/index/survey.php?uid=" . $user_id);
+		header("Location: http://kayjay:8888/index/survey.php");
 		exit;
 	} else {
 		if (password_verify($password, $data[0])) {
-			header("Location: http://kayjay:8888/index/help.php");
+			header("Location: http://kayjay:8888/index/tips.php");
 	    exit;
 		} else {
 			echo 'Invalid password.';

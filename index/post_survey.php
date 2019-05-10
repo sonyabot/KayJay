@@ -9,8 +9,7 @@
 	if (mysqli_connect_error()) {
 		die('Connect Error ('.mysqli_connect_errno().') '.mysqli_connect_error());
 	}
-	$user_id = $_POST["uid"];
-	unset($_POST["uid"]);
+	$user_id = $_COOKIE["user_id"];
 	$values = $_POST;
 
 	$string = implode(", ", $values);
@@ -22,6 +21,6 @@
 	    
 	$mysqli->close();
 	
-	header("Location: http://kayjay:8888/index/help.php");
+	header("Location: http://kayjay:8888/index/tips.php");
 	exit;
 ?>

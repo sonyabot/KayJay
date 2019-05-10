@@ -1,6 +1,5 @@
 <?php
 ?>
-<!-- pad the top -->
 <DOCTYPE html>
 <html>
 <head>

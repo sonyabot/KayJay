@@ -2,9 +2,7 @@
 
 $query = urlencode($_POST["query"]);
 $type = $_POST["type"];
-// $type = urlencode($_POST["type"]);
 $url = "http://collection.sciencemuseum.org.uk/search/" . $type . "?q=" . $query . "&page[size]=3";
-file_put_contents("sonya.log", print_r($_POST, true), FILE_APPEND);
 ?>
 <html>
 <body>

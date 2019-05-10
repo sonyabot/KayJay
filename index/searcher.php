@@ -1,16 +1,11 @@
 <?php 
-
 $subject = $_POST['subject'];
 $url = "http://kayjay:8888/index";
-switch ($subject) {
-	case "math":
-	$url .= "/math_help.php";
-	break;
-	case "reading":
-	$url .= "reading_help.php";
-	break;
-	default: 
+if ($subject === "science") {
 	$url .= "/science_help.php";
+}
+if ($subject === "math") {
+	$url .= "/math_help.php";
 }
 header("Location: " . $url);
 exit;

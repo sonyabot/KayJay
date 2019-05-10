@@ -29,6 +29,16 @@ input {
 	margin: 10px;
 }
 
+a {
+  text-decoration: none;
+}
+
+/*CODE CITATION:
+  Title: How to create a modal box
+  Author: w3schools
+  Date: 2019
+  Availability: https://www.w3schools.com*/
+
 /* Popup container */
 .info_popup {
   position: relative;
@@ -86,6 +96,17 @@ input {
   font-size: 19px;
   padding-left: 15px;
 }
+
+#login_password {
+  font-size: 19px;
+  padding-left: 15px;
+}
+
+/*CODE CITATION:
+  Title: Custom Checkboxes
+  Author: w3schools
+  Date: 2019
+  Availability: https://www.w3schools.com*/
 
 .container {
   display: block;
@@ -209,6 +230,13 @@ input {
   height: 200px;
 }
 
+/*CODE CITATION:
+  Title: CSS Tooltip
+  Author: w3schools
+  Date: 2019
+  Availability: https://www.w3schools.com/css/css_tooltip.asp*/
+
+
 .tooltip {
   position: relative;
   display: inline-block;
@@ -232,6 +260,26 @@ input {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+.error_text {
+  color: red;
+  font-size: .7em;
+  width: 240px;
+  background-color: #fff; /*make this grey */
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+   /*position: relative;*/
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+}
+
+/*CODE CITATION:
+  Title: How to create a modal box
+  Author: w3schools
+  Date: 2019
+  Availability: https://www.w3schools.com*/
 
 /* The Modal (background) */
 .modal {
@@ -257,11 +305,19 @@ input {
   height: 90%;
 }
 
+
 /* The Close Button */
 .close {
   color: black;
   float: right;
   font-size: 28px;
+  font-weight: bold;
+}
+
+.skip {
+  color: black;
+  float: left;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -282,4 +338,31 @@ input {
 .help_tip {
   width: 90%;
   height: 100%;
+}
+
+.khan_tip {
+  width: 60%;
+  height: 60%;
+}
+
+.katherine_img {
+  width: 15%;
+  height: 43%;
+}
+
+.ada_img {
+  width:15%;
+  height:30%;
+}
+
+.khan_info {
+  text-align: center; 
+  display: inline-block;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.khan_info p {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }

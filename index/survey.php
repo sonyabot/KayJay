@@ -1,6 +1,6 @@
 <?php 
 
-$uid = $_GET["uid"];
+$uid = $_COOKIE["user_id"];
 
 DEFINE('DB_USERNAME', 'root');
 DEFINE('DB_PASSWORD', 'root');
@@ -18,8 +18,6 @@ $array =[];
 foreach ($rows as $val) {
 	$array[$val[0]] = $val[1];
 }
-// file_put_contents("sonya.log", print_r($array, true), FILE_APPEND);
-
 ?>
 <!-- pad the top -->
 <DOCTYPE html>
@@ -40,7 +38,6 @@ foreach ($rows as $val) {
 					echo "</label>";
 				} 
 			?>
-			<input type="hidden" name="uid" value="<?php echo $uid?>"/>
 		  	<input class="submit-button" type="submit" value="Submit">
 		</form>
 	</div>

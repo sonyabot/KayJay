@@ -2,11 +2,11 @@
 ?>
 <html>
 	<body>
+		<a style="text-decoration:none; font-family: Arial Rounded MT Bold , Helvetica Rounded, Arial, sans-serif;" href="http://kayjay:8888/index/help.php"> << back to help</a>
 		<head>
 		  <link rel="stylesheet" type="text/css" href="kj_theme.css">
 		</head>
 		<div style="text-align: center;">
-			<!-- add href to welcome page here -->
 			<h2> It looks like you need help with Science!</h2>
 			<div style="display: inline-block;">
 				<p class="here-to-help">The <b>Science Museum</b> has all kinds of information on science. <br> Just type in your query below, and we'll redirect you to their app!</p>
@@ -20,13 +20,17 @@
 				</form>
 					<p class="here-to-help">Once you're there, feel free to use the search bar (like the one above) <br> to make another request for information, or click on the images provided  <br> to read about the objects, people or places you have searched for.</p>
 			</div>
-
+			  <!-- CODE CITATION:
+	   		  Title: How to create a modal box
+		      Author: w3schools
+		      Date: 2019
+		      Availability: https://www.w3schools.com -->
 			<!-- The Modal -->
 			<div id="myModal" class="modal">
-
 			  <!-- Modal content -->
 			  <div class="modal-content">
 			    <span class="close">&times;</span>
+			    <span class="skip">skip</span>
 			    <div id="tip_1">
 			    	<img class="help_tip" src="help_tip_1.jpg">
 			    	<span id="next_1">Next</span>
@@ -45,6 +49,12 @@
 			</div>
 		</div>
 		<script>
+			// 		CODE CITATION:
+			// 		Title: How to create a modal box
+			//      Author: w3schools
+			//      Date: 2019
+			//      Availability: https://www.w3schools.com
+
 			// Get the modal
 			var modal = document.getElementById("myModal");
 
@@ -53,6 +63,9 @@
 
 			// Get the <span> element that closes the modal
 			var span = document.getElementsByClassName("close")[0];
+
+			// Skip the modal
+			var skip = document.getElementsByClassName("skip")[0];
 
 			var tip_1 = document.getElementById("tip_1");
 			var tip_2 = document.getElementById("tip_2");
@@ -64,6 +77,8 @@
 			var got_it = document.getElementById("got_it");
 
 			var form = document.getElementById("help_form");
+
+			var skip_modal = document.getElementById("skip");
 
 			// When the user clicks the button, open the modal 
 			btn.onclick = function() {
@@ -90,10 +105,18 @@
 			  modal.style.display = "none";
 			}
 
-			got_it.onclick = function(){
+			skip.onclick = function() {
 				modal.style.display = "none";
 				form.submit();
 			}
+
+			got_it.onclick = function() {
+				modal.style.display = "none";
+				form.submit();
+			}
+			
+			var goToForm = 
+
 			// close modal
 			window.onclick = function(event) {
 			  if (event.target == modal) {
