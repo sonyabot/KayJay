@@ -11,7 +11,7 @@
 			<h2> It looks like you need help with Science!</h2>
 			<div style="display: inline-block;">
 				<p class="here-to-help">The <b>Science Museum</b> has all kinds of information on science. <br> Just type in your query below, and we'll redirect you to their app!</p>
-				<form id="help_form" action="http://kayjay:8888/index/science_museum.php" method="post">
+				<form target="_blank" id="help_form" action="http://kayjay:8888/index/science_museum.php" method="post">
 					<select class="dropdown-input" name="type">
 						<option value="people">People</option>
 						<option value="objects">Objects</option>
@@ -19,7 +19,7 @@
 			  	<input type="text" name="query" class="help-input" placeholder="search"><br>
 			  	<input id="myBtn" type="button" value="Submit" class="submit-button">
 				</form>
-					<p class="here-to-help">Once you're there, feel free to use the search bar (like the one above) <br> to make another request for information, or click on the images provided  <br> to read about the objects, people or places you have searched for.</p>
+					<p class="here-to-help">We will open a new <a href="https://www.computerhope.com/jargon/t/tabbrows.htm" target="_blank">tab</a> for you once you are ready to browse, <br>so that you may easily come back to this page whenever you are done!</p>
 			</div>
 			  <!-- CODE CITATION:
 	   		  Title: How to create a modal box

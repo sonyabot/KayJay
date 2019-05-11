@@ -1,15 +1,16 @@
 <?php
 
+/*CODE CITATION:
+  Title: How to close Browser Tab After Submitting a Form?
+  Author: Shaktit Singh StackOverflow
+  Date: 2011
+  Availability: https://stackoverflow.com/questions/8355316/how-to-close-browser-tab-after-submitting-a-form */
+
 $query = urlencode($_POST["query"]);
 $type = $_POST["type"];
 $url = "http://collection.sciencemuseum.org.uk/search/" . $type . "?q=" . $query . "&page[size]=3";
+
+header("Location: " . $url);
+echo "<script>window.close();</script>";
+exit;
 ?>
-<html>
-<body>
-	<a style="text-decoration:none; font-family: Arial Rounded MT Bold , Helvetica Rounded, Arial, sans-serif;" href="http://kayjay:8888/index/help.php"> << back to KayJay</a>
-	<div>
-		<iframe src=<?php echo $url; ?> width="100%" height="100%" frameBorder="0">
-		</iframe>
-	</div>
-</body>
-</html>
