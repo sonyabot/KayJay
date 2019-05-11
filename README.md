@@ -24,7 +24,8 @@ If you wish to do this via terminal, then once mysql has been brought up, type i
 
 Then, create the following tables:
 
-```survey:
+```
+survey:
 +-----------+------------------+------+-----+---------+----------------+
 | Field     | Type             | Null | Key | Default | Extra          |
 +-----------+------------------+------+-----+---------+----------------+
