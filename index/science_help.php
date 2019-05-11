@@ -1,12 +1,13 @@
 <?php 
 ?>
 <html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  	<link rel="stylesheet" type="text/css" href="kj_theme.css">
+	</head>
 	<body>
 		<a style="text-decoration:none; font-family: Arial Rounded MT Bold , Helvetica Rounded, Arial, sans-serif;" href="http://kayjay:8888/index/help.php"> << back to help</a>
-		<head>
-		  <link rel="stylesheet" type="text/css" href="kj_theme.css">
-		</head>
-		<div style="text-align: center;">
+		<div class="science_info">
 			<h2> It looks like you need help with Science!</h2>
 			<div style="display: inline-block;">
 				<p class="here-to-help">The <b>Science Museum</b> has all kinds of information on science. <br> Just type in your query below, and we'll redirect you to their app!</p>

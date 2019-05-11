@@ -1,26 +1,27 @@
-f<?php
+<?php
 ?>
 <!-- pad the top -->
 <DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="kj_theme.css">
-   <script>
-  	/*CODE CITATION:
-	  Title: Custom Checkboxes
-	  Author: w3schools
-	  Date: 2019
-	  Availability: https://www.w3schools.com*/
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="kj_theme.css">
+	   <script>
+	  	/*CODE CITATION:
+		  Title: Custom Checkboxes
+		  Author: w3schools
+		  Date: 2019
+		  Availability: https://www.w3schools.com*/
 
-	function showPassword() {
-	  var inp = document.getElementById("login_input");
-	  if (inp.type === "password") {
-	    inp.type = "text";
-	  } else {
-	    inp.type = "password";
-	  }
-	}
-	</script>
+		function showPassword() {
+		  var inp = document.getElementById("login_input");
+		  if (inp.type === "password") {
+		    inp.type = "text";
+		  } else {
+		    inp.type = "password";
+		  }
+		}
+		</script>
 </head>
 <body>
 

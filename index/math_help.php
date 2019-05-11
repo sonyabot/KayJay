@@ -3,7 +3,8 @@
 <html>
 	<body>
 		<head>
-		  <link rel="stylesheet" type="text/css" href="kj_theme.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  	<link rel="stylesheet" type="text/css" href="kj_theme.css">
 		</head>
 		<a style="text-decoration:none; font-family: Arial Rounded MT Bold , Helvetica Rounded, Arial, sans-serif;" href="http://kayjay:8888/index/help.php"> << back to help</a>
 		<div class="khan_info">

@@ -23,7 +23,8 @@ foreach ($rows as $val) {
 <DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="kj_theme.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" type="text/css" href="kj_theme.css">
 </head>
 <body>
 	<div style="text-align: center;">

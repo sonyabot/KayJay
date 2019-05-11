@@ -1,7 +1,8 @@
 <?php?>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="kj_theme.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="kj_theme.css">
 </head>
 <body>
 	<a class="back_link" href="http://kayjay:8888/index/start.php"> << go back</a>
